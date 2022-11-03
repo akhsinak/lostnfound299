@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/matrix_white_design"
+    tools:context=".SignUpActivity">
+    <ProgressBar
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_centerInParent="true"
+        android:theme="@style/MyProgressBar"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/SignInLayout">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/sign_in_statement"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:id="@+id/SignInStatment"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <!--        EMAIL ADDRESS BOX-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350sp"
+            android:layout_height="70sp"
+            app:boxStrokeColor="@color/white"
+            android:id="@+id/signin_email_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/email"
+                android:textColor="#404040"
+                android:id="@+id/signin_email_textinput"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        <!--        PASSWORD BOX-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350sp"
+            android:layout_height="70sp"
+            app:passwordToggleEnabled="true"
+            app:boxStrokeColor="@color/white"
+            android:id="@+id/signin_pass_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/password"
+                android:textColor="#404040"
+                android:id="@+id/signin_pass_textinput"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--        BUTTONS-->
+
+        <Button
+            android:id="@+id/SignInButton"
+            android:layout_width="300sp"
+            android:layout_height="70sp"
+            android:layout_marginTop="30sp"
+            android:text="@string/sign_in_button_text"
+            android:textAllCaps="false">
+
+        </Button>
+
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dont Have An Account ?"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        
+        <TextView
+            android:id="@+id/signin_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_gravity="center"
+            android:textColor="#2196F3"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

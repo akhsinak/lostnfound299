@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "190696389054",
+    "firebase_url": "https://lostnfound299-default-rtdb.firebaseio.com",
+    "project_id": "lostnfound299",
+    "storage_bucket": "lostnfound299.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190696389054:android:fb7f369d762efbfe61a1ef",
+        "android_client_info": {
+          "package_name": "com.akhsinak.lostnfound"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190696389054-jf53fkmvcvk64vj3udpth7fg3mf0iqm1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlRKZTxhd_eEkx2--nAQ-cYP54xmKb3r0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190696389054-jf53fkmvcvk64vj3udpth7fg3mf0iqm1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

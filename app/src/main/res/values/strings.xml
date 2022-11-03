@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LostnFound</string>
+    <string name="welcome">WELCOME</string>
+    <string name="sign_up_to_continue">SIGN UP TO CONTINUE</string>
+    <string name="name">NAME</string>
+    <string name="email">EMAIL</string>
+    <string name="password">PASSWORD</string>
+    <string name="confirm_password">CONFIRM PASSWORD</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="phone">PHONE</string>
+    <string name="sign_in_statement">SIGN IN TO CONTINUE</string>
+    <string name="sign_in_button_text">SIGN IN</string>
+</resources>

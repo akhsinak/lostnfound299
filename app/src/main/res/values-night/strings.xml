@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome">WELCOME</string>
+    <string name="sign_up_to_continue">SIGN UP TO CONTINUE</string>
+    <string name="name">NAME</string>
+    <string name="email">EMAIL</string>
+    <string name="password">PASSWORD</string>
+    <string name="confirm_password">CONFIRM PASSWORD</string>
+    <string name="sign_up">SIGN UP</string>
+</resources>
