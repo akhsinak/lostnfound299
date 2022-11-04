@@ -13,10 +13,8 @@ import org.w3c.dom.Text
 class SignInActivity : AppCompatActivity() {
 
 
-
-
         private lateinit var auth : FirebaseAuth
-        private lateinit var database : FirebaseDatabase
+//        private lateinit var database : FirebaseDatabase
         private val emailPattern = "[a-zA-Z0-9._-]+@iitp.ac.in"
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -78,7 +76,17 @@ class SignInActivity : AppCompatActivity() {
             }
             else
             {
-//                auth.signIn
+                auth.signInWithEmailAndPassword(email_str,pass_str).addOnCompleteListener{
+                    if(it.isSuccessful){
+                        val intent = Intent(this,MainActivity::class.java)
+                        startActivity(intent)
+                    }
+                    else
+                    {
+                        Toast.makeText(this,"Something Went Wrong",Toast.LENGTH_SHORT).show()
+                        signinprobar.visibility = View.GONE
+                    }
+                }
             }
          }
     }

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashBoard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginBottom="100sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DASHBOARD"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginTop="100sp">
+
+        <Button
+            android:id="@+id/logoutbtn"
+            android:layout_width="300sp"
+            android:layout_height="70sp"
+            android:text="LOGOUT"
+            android:textAllCaps="false"
+            android:layout_marginTop="100sp"
+            android:layout_gravity="center_horizontal">
+
+        </Button>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_marginTop="200sp">
+
+        <TextView
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:text="@string/name"
+            android:textSize="20sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/dashname"
+            android:layout_width="300sp"
+            android:layout_height="70sp"
+            android:text="@string/name"
+            android:textSize="20sp">
+        </TextView>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_marginTop="270sp">
+
+        <TextView
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:text="EMAIL"
+            android:textSize="20sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/dashemail"
+            android:layout_width="300sp"
+            android:layout_height="70sp"
+            android:text="@string/name"
+            android:textSize="20sp">
+        </TextView>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_marginTop="340sp">
+
+        <TextView
+            android:layout_width="170sp"
+            android:layout_height="70sp"
+            android:text="EMAIL VERIFIED"
+            android:textSize="20sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/dashverified"
+            android:layout_width="300sp"
+            android:layout_height="70sp"
+            android:text="@string/name"
+            android:textSize="20sp">
+        </TextView>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_marginTop="410sp">
+
+        <TextView
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:text="UID"
+            android:textSize="20sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/dashuid"
+            android:layout_width="300sp"
+            android:layout_height="70sp"
+            android:text="@string/name"
+            android:textSize="20sp">
+        </TextView>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
