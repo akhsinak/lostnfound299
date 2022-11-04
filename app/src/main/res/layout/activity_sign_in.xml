@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/matrix_white_design"
+    android:background="@drawable/bg4"
     tools:context=".SignUpActivity">
     <ProgressBar
+        android:id="@+id/SignInProgressBar"
         android:layout_width="50sp"
         android:layout_height="50sp"
         android:layout_centerInParent="true"
@@ -52,11 +53,11 @@
             android:id="@+id/signin_email_layout">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signin_email_textinput"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/email"
-                android:textColor="#404040"
-                android:id="@+id/signin_email_textinput"/>
+                android:textColor="#404040" />
 
         </com.google.android.material.textfield.TextInputLayout>
 

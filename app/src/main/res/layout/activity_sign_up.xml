@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/matrix_white_design"
+    android:background="@drawable/bg3"
     tools:context=".SignUpActivity">
     <ProgressBar
         android:id="@+id/signupProgressbar"
