@@ -4,9 +4,9 @@ plugins {
     id 'com.google.gms.google-services'
 
     // added now
-    id 'kotlin-android-extensions'
-    id 'com.google.gms.google-services'
-    id  'kotlin-kapt'
+//    id 'kotlin-android-extensions'
+//    id 'com.google.gms.google-services'
+//    id  'kotlin-kapt'
 
 }
 
