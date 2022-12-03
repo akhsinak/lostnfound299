@@ -12,7 +12,8 @@ import com.google.firebase.ktx.Firebase
 class dashboard2 : AppCompatActivity() {
 
     private lateinit var logout2: Button
-    private lateinit var my_profile: Button
+    private lateinit var myprofile: Button
+    private lateinit var postlost: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +24,6 @@ class dashboard2 : AppCompatActivity() {
 
 
         logout2 = findViewById(R.id.logout_button)
-
         logout2.setOnClickListener{
 
             Firebase.auth.signOut()
@@ -34,15 +34,29 @@ class dashboard2 : AppCompatActivity() {
             Toast.makeText(this,"Logout Successful", Toast.LENGTH_SHORT).show()
         }
 
-        my_profile = findViewById(R.id.profile)
 
-        my_profile.setOnClickListener{
+
+        myprofile = findViewById(R.id.profile)
+        myprofile.setOnClickListener{
 
             val intent  = Intent(this,myprofile::class.java)
             startActivity(intent)
 
 
         }
+
+
+        postlost = findViewById(R.id.dash_post_lost)
+        postlost.setOnClickListener{
+
+            val intent  = Intent(this,post_lost_item_activity::class.java)
+            startActivity(intent)
+
+
+        }
+
+
+
 
     }
 }

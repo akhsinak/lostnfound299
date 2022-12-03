@@ -15,6 +15,20 @@
         android:theme="@style/Theme.LostnFound"
         tools:targetApi="31">
         <activity
+            android:name=".post_found_activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".post_lost_item_activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".sample"
             android:exported="false">
             <meta-data

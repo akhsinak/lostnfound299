@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg14"
+    tools:context=".post_found_activity">
+    <ProgressBar
+        android:id="@+id/postfoundProgressbar"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_centerInParent="true"
+        android:theme="@style/MyProgressBar"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/WelcomeAndSignUpLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POST FOUND ITEM"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10sp"
+            android:id="@+id/SignUpWelcome"/>
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:text="@string/sign_up_to_continue"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="25sp"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:id="@+id/SignUpStatment"/>-->
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500sp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <!--        SIGN UP NAME BOX-->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350sp"
+            android:layout_height="70sp"
+            app:boxStrokeColor="@color/black"
+            android:id="@+id/lost_name_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/name"
+                android:textColor="@color/black"
+                android:id="@+id/lost_name_textinput"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--        EMAIL ADDRESS BOX-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350sp"
+            android:layout_height="70sp"
+            app:boxStrokeColor="@color/white"
+            android:id="@+id/lost_phone_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="PHONE"
+                android:textColor="#404040"
+                android:id="@+id/lost_phone_textinput"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--            phone number-->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350sp"
+            android:layout_height="70sp"
+            app:boxStrokeColor="@color/white"
+            android:id="@+id/lost_where_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="WHERE LOST ?"
+                android:textColor="#404040"
+                android:id="@+id/lost_where_textinput"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350sp"
+            android:layout_height="70sp"
+            app:boxStrokeColor="@color/white"
+            android:id="@+id/lost_des_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="DESCRIPTION"
+                android:textColor="#404040"
+                android:id="@+id/lost_des_textinput"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <!--        BUTTONS-->
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="400sp">
+
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_marginTop="30sp"
+            android:src="@drawable/image_preview"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_marginLeft="150sp"
+        android:layout_marginTop="400sp">
+
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_marginTop="30sp"
+            android:src="@drawable/image_preview"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_marginLeft="270sp"
+        android:layout_marginTop="400sp">
+
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_marginTop="30sp"
+            android:src="@drawable/image_preview"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_marginTop="550sp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/lostUpload"
+            android:layout_width="300sp"
+            android:layout_height="70sp"
+            android:layout_marginTop="30sp"
+            android:text="UPLOAD"
+            android:textAllCaps="false">
+
+        </Button>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
