@@ -167,4 +167,4 @@ class SignUpActivity : AppCompatActivity() {
 
 //just some random lines to check for the restore capabilities of github
 
-//comment 1
+//comment 2 in branch_1
