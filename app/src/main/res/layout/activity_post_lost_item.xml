@@ -143,6 +143,7 @@
 
 
         <ImageView
+            android:id="@+id/lostimg1"
             android:layout_width="100sp"
             android:layout_height="100sp"
             android:layout_marginTop="30sp"
@@ -158,6 +159,7 @@
 
 
         <ImageView
+            android:id="@+id/lostimg2"
             android:layout_width="100sp"
             android:layout_height="100sp"
             android:layout_marginTop="30sp"
@@ -173,6 +175,7 @@
 
 
         <ImageView
+            android:id="@+id/lostimg3"
             android:layout_width="100sp"
             android:layout_height="100sp"
             android:layout_marginTop="30sp"
