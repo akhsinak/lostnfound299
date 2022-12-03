@@ -26,8 +26,8 @@ class MainActivity : AppCompatActivity() {
 //            startActivity(intent)
 ////        }
         val user = Firebase.auth.currentUser
-        if (user != null) {
-            val intent = Intent(this, DashBoard::class.java)
+        if (user != null && user.isEmailVerified) {
+            val intent = Intent(this, dashboard2::class.java)
             startActivity(intent)
         } else {
             // No user is signed in

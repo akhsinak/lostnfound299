@@ -4,49 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DashBoard">
+    tools:context=".myprofile">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100sp"
-        android:layout_marginBottom="100sp">
+        android:layout_marginBottom="100sp"
+        android:layout_marginTop="20sp"
+        android:gravity="center_horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DASHBOARD"
-            android:textSize="50sp" />
+            android:text="MY PROFILE"
+            android:textStyle="bold"
+            android:textSize="40sp" />
     </LinearLayout>
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100sp"
-        android:layout_marginTop="100sp">
-
-        <Button
-            android:id="@+id/logoutbtn"
-            android:layout_width="300sp"
-            android:layout_height="70sp"
-            android:text="LOGOUT"
-            android:textAllCaps="false"
-            android:layout_marginTop="100sp"
-            android:layout_gravity="center_horizontal">
-
-        </Button>
-
-    </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70sp"
-        android:layout_marginTop="200sp">
+        android:layout_marginTop="200sp"
+        android:layout_marginLeft="20sp">
 
         <TextView
             android:layout_width="70sp"
             android:layout_height="70sp"
-            android:text="@string/name"
+            android:text="NAME:"
             android:textSize="20sp"
             android:textStyle="bold">
         </TextView>
@@ -68,7 +54,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70sp"
-        android:layout_marginTop="270sp">
+        android:layout_marginTop="270sp"
+        android:layout_marginLeft="20sp">
 
         <TextView
             android:layout_width="70sp"
@@ -96,7 +83,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70sp"
-        android:layout_marginTop="340sp">
+        android:layout_marginTop="340sp"
+        android:layout_marginLeft="20sp">
 
         <TextView
             android:layout_width="170sp"
@@ -124,7 +112,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70sp"
-        android:layout_marginTop="410sp">
+        android:layout_marginTop="410sp"
+        android:layout_marginLeft="20sp">
+
 
         <TextView
             android:layout_width="70sp"
@@ -141,6 +131,27 @@
             android:text="@string/name"
             android:textSize="20sp">
         </TextView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginTop="580sp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/myprofile_updatepw"
+            android:layout_width="300sp"
+            android:layout_height="70sp"
+            android:text="UPDATE PASSWORD"
+            android:textAllCaps="false"
+            android:layout_marginTop="100sp"
+            android:layout_gravity="center_horizontal">
+
+        </Button>
 
     </LinearLayout>
 

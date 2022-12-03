@@ -13,21 +13,21 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import org.w3c.dom.Text
 
-class DashBoard : AppCompatActivity() {
+class myprofile : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
-//    private lateinit var text: TextView
-    private lateinit var logout: Button
+    //    private lateinit var text: TextView
+    private lateinit var update_pw: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_dash_board)
+        setContentView(R.layout.activity_myprofile)
 
 
 
 
-//variables connecting to the dashboard xml file--------------------------------------
+//variables connecting to the my profile xml file--------------------------------------
         var name : TextView = findViewById(R.id.dashname)
         var email : TextView = findViewById(R.id.dashemail)
         var emailverified : TextView = findViewById(R.id.dashverified)
@@ -42,8 +42,8 @@ class DashBoard : AppCompatActivity() {
         val user = Firebase.auth.currentUser
         user?.let {
             // Name, email address, and profile photo Url
-            name.text = user.displayName
-            email.text = user.email
+//            name.text = user.displayName.toString()
+            email.text = user.email.toString()
 //            val photoUrl = user.photoUrl
 
             // Check if user's email is verified
@@ -52,22 +52,17 @@ class DashBoard : AppCompatActivity() {
             // The user's ID, unique to the Firebase project. Do NOT use this value to
             // authenticate with your backend server, if you have one. Use
             // FirebaseUser.getToken() instead.
-            uid.text = user.uid
+            uid.text = user.uid.toString()
         }
         //-------------------------------------------------------------------------------
 
+        update_pw = findViewById(R.id.myprofile_updatepw)
 
-        logout = findViewById(R.id.logoutbtn)
-
-        logout.setOnClickListener{
-
-            Firebase.auth.signOut()
-
-            val intent = Intent(this,SignInActivity::class.java)
+        update_pw.setOnClickListener {
+            val intent  = Intent(this,updatepassActivity::class.java)
             startActivity(intent)
-
-            Toast.makeText(this,"Logout Successful", Toast.LENGTH_SHORT).show()
         }
+
 
 
     }

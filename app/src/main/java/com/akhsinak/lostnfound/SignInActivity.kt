@@ -1,5 +1,6 @@
 package com.akhsinak.lostnfound
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,8 +8,6 @@ import android.view.View
 import android.widget.*
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.FirebaseDatabase
-import org.w3c.dom.Text
 
 class SignInActivity : AppCompatActivity() {
 
@@ -17,6 +16,7 @@ class SignInActivity : AppCompatActivity() {
 //        private lateinit var database : FirebaseDatabase
         private val emailPattern = "[a-zA-Z0-9._-]+@iitp.ac.in"
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
@@ -31,9 +31,15 @@ class SignInActivity : AppCompatActivity() {
         val signinprobar: ProgressBar = findViewById(R.id.SignInProgressBar)
 
         val signin_signup_text : TextView = findViewById(R.id.signin_signup)
+        val signin_forgotpw_text : TextView = findViewById(R.id.signin_forgot_password)
 
         signin_signup_text.setOnClickListener {
             val intent  = Intent(this,SignUpActivity::class.java)
+            startActivity(intent)
+        }
+
+        signin_forgotpw_text.setOnClickListener {
+            val intent  = Intent(this,ForgotPassActivity::class.java)
             startActivity(intent)
         }
 
@@ -62,11 +68,11 @@ class SignInActivity : AppCompatActivity() {
                 Toast.makeText(this,"Enter Valid Details",Toast.LENGTH_SHORT).show()
 
             }
-            else if(!email_str.matches(emailPattern.toRegex())){
-                signinprobar.visibility = View.GONE
-                signinemail.error = "Enter Valid Email Address"
-                Toast.makeText(this,"Enter Valid Email Address",Toast.LENGTH_SHORT).show()
-            }
+//            else if(!email_str.matches(emailPattern.toRegex())){
+//                signinprobar.visibility = View.GONE
+//                signinemail.error = "Enter Valid Email Address"
+//                Toast.makeText(this,"Enter Valid Email Address",Toast.LENGTH_SHORT).show()
+//            }
             else if (pass_str.length < 8)
             {
                 signinpasslayout.isPasswordVisibilityToggleEnabled = true
@@ -78,8 +84,17 @@ class SignInActivity : AppCompatActivity() {
             {
                 auth.signInWithEmailAndPassword(email_str,pass_str).addOnCompleteListener{
                     if(it.isSuccessful){
-                        val intent = Intent(this,MainActivity::class.java)
-                        startActivity(intent)
+                        val verifio = auth.currentUser?.isEmailVerified
+
+                        if(verifio == true) {
+                            val intent = Intent(this, MainActivity::class.java)
+                            startActivity(intent)
+                        }
+                        else
+                        {
+                            Toast.makeText(this,"PLease verify your email !",Toast.LENGTH_SHORT).show()
+                            signinprobar.visibility = View.GONE
+                        }
                     }
                     else
                     {

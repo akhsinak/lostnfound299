@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginBottom="100sp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DASHBOARD"
+            android:layout_gravity="center"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginTop="100sp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/post_lost"
+            android:layout_width="300sp"
+            android:layout_height="70sp"
+            android:text="POST LOST ITEM"
+            android:textAllCaps="false"
+            android:layout_marginTop="100sp"
+            android:layout_gravity="center_horizontal">
+
+        </Button>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginTop="200sp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/post_found"
+            android:layout_width="300sp"
+            android:layout_height="70sp"
+            android:text="POST FOUND ITEM"
+            android:textAllCaps="false"
+            android:layout_marginTop="100sp"
+            android:layout_gravity="center_horizontal">
+
+        </Button>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginTop="300sp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/feed_lost"
+            android:layout_width="300sp"
+            android:layout_height="70sp"
+            android:text="FEED : LOST ITEMS"
+            android:textAllCaps="false"
+            android:layout_marginTop="100sp"
+            android:layout_gravity="center_horizontal">
+
+        </Button>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginTop="400sp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/feed_found"
+            android:layout_width="300sp"
+            android:layout_height="70sp"
+            android:text="FEED : FOUND ITEMS"
+            android:textAllCaps="false"
+            android:layout_marginTop="100sp"
+            android:layout_gravity="center_horizontal">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginTop="500sp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/myposts"
+            android:layout_width="300sp"
+            android:layout_height="70sp"
+            android:text="MY POSTS"
+            android:textAllCaps="false"
+            android:layout_marginTop="100sp"
+            android:layout_gravity="center_horizontal">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_marginTop="600sp"
+        android:layout_marginLeft="100sp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="300sp"
+            android:layout_height="70sp"
+            android:text="LOGOUT"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="100sp"
+            android:layout_gravity="center_horizontal">
+
+        </Button>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="120sp"
+        android:layout_height="100sp"
+        android:layout_marginTop="600sp"
+        android:layout_marginLeft="220sp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="300sp"
+            android:layout_height="70sp"
+            android:text="MY PROFILE"
+            android:textAllCaps="false"
+            android:layout_marginTop="100sp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#FF5722">
+
+        </Button>
+
+    </LinearLayout>
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70sp"-->
+<!--        android:layout_marginTop="200sp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="70sp"-->
+<!--            android:layout_height="70sp"-->
+<!--            android:text="@string/name"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold">-->
+<!--        </TextView>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/dashname"-->
+<!--            android:layout_width="300sp"-->
+<!--            android:layout_height="70sp"-->
+<!--            android:text="@string/name"-->
+<!--            android:textSize="20sp">-->
+<!--        </TextView>-->
+
+<!--    </LinearLayout>-->
+
+
+
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70sp"-->
+<!--        android:layout_marginTop="270sp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="70sp"-->
+<!--            android:layout_height="70sp"-->
+<!--            android:text="EMAIL"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold">-->
+<!--        </TextView>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/dashemail"-->
+<!--            android:layout_width="300sp"-->
+<!--            android:layout_height="70sp"-->
+<!--            android:text="@string/name"-->
+<!--            android:textSize="20sp">-->
+<!--        </TextView>-->
+
+<!--    </LinearLayout>-->
+
+
+
+
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70sp"-->
+<!--        android:layout_marginTop="340sp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="170sp"-->
+<!--            android:layout_height="70sp"-->
+<!--            android:text="EMAIL VERIFIED"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold">-->
+<!--        </TextView>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/dashverified"-->
+<!--            android:layout_width="300sp"-->
+<!--            android:layout_height="70sp"-->
+<!--            android:text="@string/name"-->
+<!--            android:textSize="20sp">-->
+<!--        </TextView>-->
+
+<!--    </LinearLayout>-->
+
+
+
+
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70sp"-->
+<!--        android:layout_marginTop="410sp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="70sp"-->
+<!--            android:layout_height="70sp"-->
+<!--            android:text="UID"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold">-->
+<!--        </TextView>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/dashuid"-->
+<!--            android:layout_width="300sp"-->
+<!--            android:layout_height="70sp"-->
+<!--            android:text="@string/name"-->
+<!--            android:textSize="20sp">-->
+<!--        </TextView>-->
+
+<!--    </LinearLayout>-->
+
+
+
+
+</RelativeLayout>
